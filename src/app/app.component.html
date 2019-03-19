@@ -1,0 +1,92 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins:800" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<ul class="nav sticky-top justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="#inicio">Início</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#minibio">Minibio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#interesses">Interesses</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#academicas">Informações Acadêmicas</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#profissionais">Informações Profissionais</a>
+  </li>
+</ul>
+
+
+
+<div class="section centro principal">
+  <h1><a id="inicio"></a>ABOUT ME</h1>
+  <div class="container">
+    <div class="row justify-content-center"> <!-- Tela -->
+      <div class="col-6 info"> <!-- Foto, info e minibio -->
+          <img class="foto" src="/assets/IMG_4534.jpg "/>
+          <p>Nome: {{nome}}</p>
+          <p>E-mail: {{email}}</p>
+          <p>Sexo: {{sexo}}</p>
+          <p>Profissão: {{profissao}}</p>
+          <p>Estado civil: {{estado_civil}}</p>
+          <p>Cidade: {{cidade}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section_g">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3><a id="minibio"></a>Minibio</h3>
+        <p>{{minibio}}</p>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3 class="subtitulo"><a id="interesses"></a>Meus Interesses</h3>
+          <p *ngFor="let interesse of interesses"> {{ interesse }} </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section_g">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3><a id="academicas"></a>Minhas Informações Acadêmicas</h3>
+          <p>Universidade: {{universidade}}</p>
+          <p>Curso: {{curso}}</p>
+          <h5>Atualmente Cursando:</h5>
+          <p *ngFor="let disciplina of disciplinas"> {{ disciplina }} </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3 class="subtitulo"><a id="profissionais"></a>Minhas Informações Profissionais</h3>
+          <p>Empresa: {{empresa}}</p>
+          <p>Cargo: {{cargo}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+      
+

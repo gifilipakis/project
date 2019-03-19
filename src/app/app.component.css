@@ -1,0 +1,60 @@
+.section{
+    padding: 55px;
+    background-color: rgb(9, 34, 56);
+    text-align: center;
+}
+
+.section_g{
+    background-color: rgb(230, 230, 230);
+    padding: 55px;
+    text-align: center;
+}
+
+.container{
+    padding: 0px 70px 0px 70px;
+}
+
+h1, h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section h1, .subtitulo{
+    color: white;
+}
+
+.section p{
+    color: white;
+}
+
+.section_g h1, h3{
+    color: rgb(9, 34, 56);
+}
+
+.section_g p, p{
+    color: rgb(9, 34, 56);
+}
+
+.principal{
+    padding-bottom: 210px;
+}
+
+.foto{
+    max-width: 200px;
+}
+
+.info p{
+    line-height: 5px;
+    margin-top: 20px;
+}
+
+.nav{
+    background-color: white;
+}
+
+.nav a{
+    color: rgb(9, 34, 56);
+}
